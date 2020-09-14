@@ -24,6 +24,25 @@ h4 {color:#222; font-size:1.4em; font-weight:normal; letter-spacing:-1px; margin
 
 
 
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column1 {
+  float: left;
+  width: 34%;
+  padding: 4px;
+}
+
+.column2 {
+  float: left;
+  width: 63%;
+  padding: 1px;
+}
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 div.navi {
 	float: center;
 	width: 70px; 
