@@ -129,3 +129,7 @@ li a.active {
   -webkit-text-stroke-width: 0.25px; 
   -webkit-text-stroke-color: black;
 }
+
+tr:nth-child(odd) {
+  background-color: C3C8D2;
+}
