@@ -161,7 +161,7 @@
     <td><a href="#GuillenAbstract">Intro lecture (Guillen)</a></td>
     <td><a href="#GangboAbstract1">Gangbo Lecture 1</a></td>
     <td><a href="#GangboAbstract1">Gangbo Lecture 3</a></td>
-    <td>Jacobs Lecture 3 </td>	
+    <td><a href="#JacobsAbstractSchool">Jacobs Lecture 3</a></td>	
   </tr>
   <tr>
     <td>10:30 am - 10:50 am</td>
@@ -188,7 +188,7 @@
     <td>01:30 pm - 02:30 pm</td>
     <td><a href="#PatriziAbstract">Patrizi Lecture 2</a></td>
     <td><a href="#UribeAbstractSchool">Uribe Lecture 1</a></td>
-    <td>Jacobs Lecture 1</td>
+    <td><a href="#JacobsAbstractSchool">Jacobs Lecture 1</a></td>
     <td><a href="#PatriziAbstract">Patrizi Lecture 4</a></td>	
   </tr>      
   <tr>
@@ -202,7 +202,7 @@
     <td>03:00 pm - 04:00 pm</td>
     <td><a href="#PatriziAbstract">Patrizi Lecture 3</a></td>
     <td><a href="#UribeAbstractSchool">Uribe Lecture 2</td>
-    <td>Jacobs Lecture 2</td>
+    <td><a href="#JacobsAbstractSchool">Jacobs Lecture 2</a></td>
     <td><a href="#UribeAbstractSchool">Uribe Lecture 4</a></td>	
   </tr>        
   <tr>
@@ -210,7 +210,7 @@
     <td>Informal discussion</td>
     <td>Informal discussion</td>
     <td>Informal discussion</td>
-    <td>Jacobs Lecture 4</td>	
+    <td><a href="#JacobsAbstractSchool">Jacobs Lecture 4</a></td>	
   </tr>      
 
 </table>
@@ -258,7 +258,7 @@
   
   <tr>
 	<td>3:00 - 4:00 pm</td> 
-	<td>Matthew Jacobs</td>
+	<td><a href="#JacobsAbstractWorkshop">Matthew Jacobs</a></td>
 	<td></td>
 	<td></td>
 	<td></td>
@@ -288,7 +288,7 @@
 	<td></td> 
 	<td></td>
 	<td>10:30 - 11:30 am</td>
-	<td>Neha Wadia</td>
+	<td><a href="#WadiaAbstract">Neha Wadia</a></td>
 	<td></td>
 	<td></td> 
   </tr>
@@ -446,6 +446,22 @@
 	</div>
 </div>		
 
+<div id="JacobsAbstractSchool" class="overlay">
+	<div class="popup">
+		<a class="close" href="#!">&times;</a>
+
+		<h2>Gradient methods in infinite dimensions</h2>		
+		<h2>Matt Jacobs, University of California Santa Barbara</h2>
+		
+		<h2>Time: Wednesday 1:30-2:30 pm, 3-4 pm, Thursday 9:30-10:30 am, 3-4 pm.</h2>
+		<h2>Location: (Texas State) <a href="https://maps.app.goo.gl/2SBbxMu3RkZimc1s8">Ingram Hall</a> Room 3204. </h2>
+		<div class="content">
+		
+		<p font=lucida>Gradient descent or dual gradient ascent are perhaps the fundamental methods for solving optimization problems.  The classical setting for these gradient methods is a finite dimensional Euclidean space equipped with the $L^2$ inner product.  On the other hand, optimization problems arising from PDEs are necessarily infinite dimensional.  Furthermore, the optimization may occur over a space that does not have a natural inner product, forcing the user to make a nontrivial choice.  In this mini-course, we will investigate how to best apply gradient methods in infinite dimensions, focusing on examples from optimal transport (computing the $W_2$ and $W_1$ Wasserstein distances), gradient flows (minimizing movements/JKO scheme), and image processing (TV compressed sensing).  We shall also discuss when one should consider solving the dual problem instead of the primal problem, or consider a mixed primal-dual gradient method. </p>	
+			
+		</div>
+	</div>
+</div>		
 
 
 <div id="UribeAbstractSchool" class="overlay">
@@ -476,9 +492,6 @@
 		</div>
 	</div>
 </div>		
-
-
-
 	
 <div id="UribeAbstractWorkshop" class="overlay">
 	<div class="popup">
@@ -494,6 +507,23 @@
 	</div>
 </div>		
 
+
+<div id="JacobsAbstractWorkshop" class="overlay">
+	<div class="popup">
+		<a class="close" href="#!">&times;</a>
+
+		<h2>Adversarial training and the generalized Wasserstein barycenter problem</h2>		
+		<h2>Matt Jacobs, University of California Santa Barbara</h2>
+		<h2>Time and location: Friday 3-4 pm, at (UT Austin) <a href="https://maps.app.goo.gl/etHgP2vHCrvAZLjd9">PMA</a> Room 6.104. </h2>
+		<div class="content">
+		
+		<p font=lucida>Adversarial training is a framework widely used by practitioners to enforce robustness of machine learning models. During the training process, the learner is pitted against an adversary who has the power to alter the input data. As a result, the learner is forced to build a model that is robust to data perturbations. Despite the importance and relative conceptual simplicity of adversarial training, there are many aspects that are still not well-understood (e.g. regularization effects, geometric/analytic interpretations, tradeoff between accuracy and robustness, etc...), particularly in the case of multiclass classification.
+
+In this talk, I will show that in the non-parametric setting, the adversarial training problem is equivalent to a multimarginal optimal transport problem that can be viewed as a generalized version of the Wasserstein barycenter problem. The connection between these problems allows us to completely characterize the optimal adversarial strategy and to bring in tools from optimal transport to analyze and compute optimal classifiers. This also has implications for the parametric setting, as the value of the generalized barycenter problem gives a universal upper bound on the robustness/accuracy tradeoff inherent to adversarial training. </p>	
+			
+		</div>
+	</div>
+</div>		
 
 	
 <div id="DelgadinoAbstract" class="overlay">
@@ -525,6 +555,21 @@
 		</div>
 	</div>
 </div>		
+
+<div id="WadiaAbstract" class="overlay">
+	<div class="popup">
+		<a class="close" href="#!">&times;</a>
+
+		<h2>A high-probability mixing time bound for Gibbs sampling from log-smooth log-concave distributions</h2>
+		<h2>Neha Wadia, Flatiron Institute</h2>
+		<h2>Time and location: Saturday 10:30-11:30 am, at (UT Austin) <a href="https://maps.app.goo.gl/etHgP2vHCrvAZLjd9">PMA</a> Room 6.104. </h2>
+		<div class="content">
+		<p foint=lucida> Markov Chain Monte Carlo (MCMC) is a simple, generic strategy for sampling from a probability distribution $\pi(x)$, $x\in\mathbb{R}^n$, in any dimension $n$. The Gibbs sampler is the natural MCMC algorithm to use when the one-dimensional conditional distributions of each coordinate $x_i$ of $x$ are known and easy to sample from. Although an asymptotic guarantee of convergence for this sampler has existed for some time, non-asymptotic guarantees that identify the dimension dependence of its convergence behavior have only just begun to emerge. Building on the recent work of Aditi Laddha and Santosh Vempala, in which they establish a mixing time bound for Gibbs sampling from a uniform distribution over a convex body that is polynomial in $n$, we will discuss a high-probability mixing time bound for the same sampler for log-smooth log-concave distributions.</p>
+
+		</div>
+	</div>
+</div>	
+
 
 <div id="KitagawaAbstract" class="overlay">
 	<div class="popup">
