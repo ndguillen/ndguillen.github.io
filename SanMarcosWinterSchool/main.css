@@ -2,11 +2,11 @@
 
 
 /* General tags */ 
-* {margin:0; padding:1.5px;}
+* {margin:0; padding:0.8px;}
 body {background: #fff; font:100% lucida; color:#000; text-align: justify;}
 a {background-color:inherit; color:#333; font-weight:bold; text-decoration:none;}
 a:hover {text-decoration;color:#387ef9}
-p {margin:0 0 18px 0;}
+p {font-size:1.1em; margin:0 0 22px 0;}
 ul, ol {margin:0 0 16px 15px; padding-left:5px;}
 ul ul, ol ol {margin:3px 0 0 15px;}
 img {float:clear; margin:0 10px 5px 0;}
@@ -21,8 +21,6 @@ h4 {color:#222; font-size:2.4em; letter-spacing:0px; margin:0; text-align:left;}
 #title{margin:0px auto -9px; width:700px;}
 #navi{background:#fff  top left no-repeat; border:10px #000; color:#444; margin:0 auto 15px; padding:1px 1px; width:850px; line-height:1.10em}
 #body{margin:20px auto -9px; width:700px; line-height: 17pt}
-
-
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column1 {
@@ -112,10 +110,10 @@ li a.active {
 .bottom-right {
   color: white;
   position: absolute;
-  bottom: 40px;
-  right: 6px;
+  bottom: 20px;
+  right: 1px;
   font-size: 34px;
-  -webkit-text-stroke-width: 0.25px; 
+  -webkit-text-stroke-width: 0.4px; 
   -webkit-text-stroke-color: black;
 }
 
@@ -129,7 +127,78 @@ li a.active {
   -webkit-text-stroke-width: 0.25px; 
   -webkit-text-stroke-color: black;
 }
+/* Centered text */
+.top-center {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;  
+}
 
 tr:nth-child(odd) {
   background-color: C3C8D2;
+}
+
+
+/*These are the classes to create the informational pop up*/
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 60%;
+  position: relative;
+  font-family: lucida;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: lucida;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 1000px){
+  .box{
+    width: 90%;
+  }
+  .popup{
+    width: 90%;
+  }
 }
