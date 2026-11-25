@@ -1,0 +1,79 @@
+/* Homepage CSS */
+
+/* General tags */ 
+* {margin:0; padding:1.5px;}
+body {background:#000000 repeat; font:100% lucida; color:#b1b1b1;}
+a {background-color:inherit; color:#b1b1b1; font-weight:bold; text-decoration:underline;}
+a:hover {text-decoration:underline; color:#899fc5}
+p {margin:0 0 16px 0;}
+ul, ol {margin:0 0 16px 15px; padding-left:5px;}
+ul ul, ol ol {margin:3px 0 0 15px;}
+img {float:left; margin:0 10px 5px 0;}
+
+/* Headers */
+h1 {color:#b1b1b1; font-size:1.8em; letter-spacing:-1.1px; margin:0; text-align:left;}
+h2 {color:#b1b1b1; font-size:1.4em; font-weight:normal; letter-spacing:-1px; margin:5px 0 10px; text-align:left;}
+h3 {color:#b1b1b1; font-size:1.6em; font-weight:bold; letter-spacing:+0.5px; margin:5px 0 10px; font:135% sans-serif;}
+/* IDs */
+
+#title {margin:20px auto -9px; width:700px;}
+#navi{background:#000000  top left no-repeat; border:10px #b1b1b1; color:#b1b1b1; margin:0 auto 15px; padding:1px 1px; width:850px; line-height:1.10em}
+
+div.navi {
+	float: left;
+	width: 70px; 
+	height: 32px;
+	margin: 0;
+	padding: 0;	
+	text-align: center;
+	}
+	
+div.header {
+	float: center;
+	width: 70px;
+	height: 32px;
+	text-align: center;
+	}
+
+
+
+#main{background:#000000  top left no-repeat; border:10px #b1b1b1; color:#b1b1b1; margin:0 auto 15px; padding:0px; width:850px; line-height:1.3em}
+
+.description {padding-left: 30pt;}
+
+a.external {
+    background: url(external.png) center right no-repeat;
+    padding-right: 13px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+}
+
+li {padding: 0px 30px 0px 0px;}
+
+li a.active {
+    color: #4e3ac0;
+}
+
+
+/* allow room for 3 columns */
+ol
+{
+  width: 30em;
+}  /* float & allow room for the widest item */
+ol li
+{
+  float: left;
+  width: 10em;
+}  /* stop the float */
+br
+{
+  clear: left;
+}  /* separate the list from subsequent markup */
+div.wrapper
+{
+  margin-bottom: 1em;
+}
